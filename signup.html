@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up - Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a href="index.html" class="brand"><img class="logo" src="assets/cis.jpeg" alt="logo"><span class="club-name">CIS CLUB</span></a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main" style="display:flex;align-items:center;justify-content:center;padding:2rem;">
+      <section style="width:100%;max-width:400px;">
+        <div class="form-card" style="padding:2.5rem;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.1);">
+          <h2 style="text-align:center;margin:0 0 1.5rem;font-size:1.8rem;color:var(--primary);">Join the Club</h2>
+          <p style="text-align:center;color:var(--muted);margin-bottom:2rem;">Create your account to get started</p>
+          <form id="signup-form">
+            <div style="margin-bottom:1.2rem;">
+              <label for="name" style="display:block;margin-bottom:0.5rem;font-weight:600;color:var(--text);">Full Name</label>
+              <input id="name" type="text" placeholder="Your full name" required style="width:100%;padding:0.75rem;border:1px solid rgba(0,0,0,0.1);border-radius:8px;font-size:1rem;">
+            </div>
+            <div style="margin-bottom:1.2rem;">
+              <label for="email" style="display:block;margin-bottom:0.5rem;font-weight:600;color:var(--text);">Email Address</label>
+              <input id="s-email" type="email" placeholder="your@email.com" required style="width:100%;padding:0.75rem;border:1px solid rgba(0,0,0,0.1);border-radius:8px;font-size:1rem;">
+            </div>
+            <div style="margin-bottom:1.5rem;">
+              <label for="password" style="display:block;margin-bottom:0.5rem;font-weight:600;color:var(--text);">Password</label>
+              <input id="s-password" type="password" placeholder="Create a strong password" required style="width:100%;padding:0.75rem;border:1px solid rgba(0,0,0,0.1);border-radius:8px;font-size:1rem;">
+            </div>
+            <button class="btn primary" type="submit" style="width:100%;padding:0.9rem;margin-bottom:1rem;">Create Account</button>
+            <p style="text-align:center;color:var(--muted);margin:1.5rem 0;">Already have an account? <a href="login.html" style="color:var(--primary);text-decoration:none;font-weight:600;">Sign In</a></p>
+            <div id="signup-msg" style="margin-top:1rem;padding:0.75rem;border-radius:6px;text-align:center;font-weight:600;"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://www.facebook.com/diucisclub" target="_blank" class="footer-link">Facebook</a>
+            <p>&copy; 2025 CIS CLUB</p>
+            <a href="mailto:cisclub@diu.edu.bd" class="footer-link">cisclub@diu.edu.bd</a>
+        </div>
+    </footer>
+  </body>
+  </html>

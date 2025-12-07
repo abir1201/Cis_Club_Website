@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events - Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a href="index.html" class="brand"><img class="logo" src="assets/cis.jpeg" alt="logo"><span class="club-name">CIS CLUB</span></a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="events.html" class="nav-link active">Events</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container main">
+      <div class="events-header">
+        <h2>Upcoming Events</h2>
+        <button id="toggle-event-form" class="btn primary" style="display:none;">Add Event</button>
+      </div>
+      <div id="events-list" class="events-grid">
+        <!-- event cards added by script.js -->
+      </div>
+      <div id="add-event" class="form-card event-form" style="margin-top:1rem;display:none;">
+        <h3>Add Event</h3>
+        <form id="add-event-form">
+          <label for="e-title">Title</label>
+          <input id="e-title" type="text" required>
+          <label for="e-date">Date</label>
+          <input id="e-date" type="date" required>
+          <label for="e-time">Time</label>
+          <input id="e-time" type="time">
+          <label for="e-venue">Venue</label>
+          <input id="e-venue" type="text">
+          <label for="e-desc">Description</label>
+          <textarea id="e-desc" rows="3"></textarea>
+          <label for="e-image">Event Image</label>
+          <input id="e-image" type="file" accept="image/*">
+          <div id="image-preview" style="margin-top:0.5rem;"></div>
+          <div style="margin-top:1rem;display:flex;gap:0.5rem;">
+            <button class="btn primary" type="submit">Publish</button>
+            <button id="cancel-event" class="btn" type="button">Cancel</button>
+          </div>
+          <div id="add-event-msg" style="margin-top:.5rem;color:green"></div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://www.facebook.com/diucisclub" target="_blank" class="footer-link">Facebook</a>
+            <p>&copy; 2025 CIS CLUB</p>
+            <a href="mailto:cisclub@diu.edu.bd" class="footer-link">cisclub@diu.edu.bd</a>
+        </div>
+    </footer>
+  </body>
+  </html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Club Name - Home</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container nav-row">
+                <div class="brand">
+                    <img src="assets/cis.jpeg" alt="Club logo" class="logo" />
+                    <span class="club-name">CIS CLUB</span>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="events.html" class="nav-link">Events</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="resources.html" class="nav-link">Resources</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="login.html" class="nav-link login-link">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container main">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to CIS Club</h1>
+                    <p class="hero-subtitle">Empowering students through computing, innovation, and community collaboration</p>
+                    <div class="cta-row">
+                        <a href="events.html" class="btn primary">Explore Events</a>
+                        <a href="signup.html" class="btn">Join Us</a>
+                        <a href="about.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Events</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </section>
+
+            <section class="programs">
+                <h2>Our Programs</h2>
+                <p class="section-subtitle">Discover what we offer to help you grow</p>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-icon">📚</div>
+                        <h3>Workshop Series</h3>
+                        <p>Weekly hands-on workshops covering practical topics and emerging technologies.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">🎤</div>
+                        <h3>Seminar Track</h3>
+                        <p>Monthly seminars from industry experts and leading academicians.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">💡</div>
+                        <h3>Project Groups</h3>
+                        <p>Collaborate on real-world projects and build impressive portfolios.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="home-gallery" style="margin-top:3rem;margin-bottom:3rem;">
+                <h2>Events Gallery</h2>
+                <p class="section-subtitle">Photos from our recent events</p>
+                <div id="home-events-gallery" style="display:flex;gap:1.5rem;overflow-x:auto;padding:1rem 0;scroll-behavior:smooth;">
+                    <div class="card" style="flex-shrink:0;width:280px;">
+                        <img src="assets/pic1.jpg" alt="Football Tournament" style="width:100%;height:180px;border-radius:6px;object-fit:cover;">
+                        <div style="margin-top:.5rem;font-weight:bold;">Football Tournament Finalist 2025</div>
+                    </div>
+                    <div class="card" style="flex-shrink:0;width:280px;">
+                        <img src="assets/pic2.jpg" alt="Toffee" style="width:100%;height:180px;border-radius:6px;object-fit:cover;">
+                        <div style="margin-top:.5rem;font-weight:bold;">Toffee Event</div>
+                    </div>
+                    <div class="card" style="flex-shrink:0;width:280px;">
+                        <img src="assets/pic3.jpg" alt="Club Event" style="width:100%;height:180px;border-radius:6px;object-fit:cover;">
+                        <div style="margin-top:.5rem;font-weight:bold;">Club Event</div>
+                    </div>
+                    <div class="card" style="flex-shrink:0;width:280px;">
+                        <img src="assets/pic4.jpg" alt="Club Event" style="width:100%;height:180px;border-radius:6px;object-fit:cover;">
+                        <div style="margin-top:.5rem;font-weight:bold;">Club Event</div>
+                    </div>
+                    <div class="card" style="flex-shrink:0;width:280px;">
+                        <img src="assets/pic5.jpg" alt="Club Event" style="width:100%;height:180px;border-radius:6px;object-fit:cover;">
+                        <div style="margin-top:.5rem;font-weight:bold;">Club Event</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="notices">
+                <h2>Latest Notices</h2>
+                <div id="notices-list">
+                    <!-- Notices populated by script.js -->
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <a href="https://www.facebook.com/diucisclub" target="_blank" class="footer-link">Facebook</a>
+                <p>&copy; 2025 CIS CLUB</p>
+                <a href="mailto:cisclub@diu.edu.bd" class="footer-link">cisclub@diu.edu.bd</a>
+            </div>
+        </footer>
+    </body>
+    </html>
